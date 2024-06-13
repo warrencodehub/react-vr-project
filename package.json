@@ -8,6 +8,7 @@
     "deploy": "gh-pages -d dist",
     "start": "node node_modules/react-360/scripts/packager.js",
     "bundle": "node node_modules/react-360/scripts/bundle.js",
+    "build": "react-scripts build",
     "open": "node -e \"require('xopen')('http://localhost:8081/index.html')\"",
     "devtools": "react-devtools",
     "test": "jest"
@@ -17,6 +18,8 @@
     "react-360": "~1.1.0",
     "react-360-web": "~1.1.0",
     "react-native": "~0.55.4",
+    "react-scripts": "^5.0.1",
+    "react-scripts-cli": "^4.1.5",
     "three": "^0.87.0"
   },
   "devDependencies": {
@@ -30,5 +33,17 @@
   },
   "jest": {
     "preset": "react-360"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
